@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+       table,tr,th,td{
+            border: 1px solid black;
+            border-collapse:separate;
+            
+        }
+        
+
+        #y{
+            background-color: yellow;
+        }
+        #g{
+            background-color: green;
+        }
+        #v{
+            background-color: violet;
+        }
+    </style>
+
+</head>
+<body>
+    <div style="border: 1px solid black; width: fit-content;">
+    <table style="border: 2px;">
+         
+       <colgroup>
+        
+    </colgroup>
+        <tr>
+            <th rowspan="3">Day</th>
+            <th colspan="3">Seminar</th>
+        </tr>
+        <tr>
+            <th colspan="2">Schedule</th>
+            <th rowspan="2">Topic</th>
+            
+        </tr>
+        <tr>
+            <th>Begin</th>
+            <th>End</th>
+            
+        </tr>
+        <tr>
+            <td rowspan="2">Monday</td>
+            <td id="y" rowspan="2">8:00 a.m</td>
+            <td id ="v"rowspan="2"> 5:00 p.m</td>
+            <td>Introduction To XML</td>
+        </tr>
+        <tr>
+            <td>Validity :DTD and Relex NG</td>
+            
+        </tr>
+        <tr>
+            <td rowspan="3">Tuesday</td>
+            <td id="y">8:00 a.m</td>
+            <td id="y">11:00 a.m</td>
+            <td>XPath</td>
+        </tr>
+        <tr>
+            <td id="y">11:a.m</td>
+            <td id="g">2:00 p.m</td>
+            <td rowspan="2">XLS Transformations</td>
+            
+        </tr>
+        <tr>
+            <td id="g">2:00 p.m</td>
+            <td id="v">5:00 p.m</td>
+            
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td id="y">8:00 a.m</td>
+            <td id="g">12:00 p.m</td>
+            <td>XLS Formatting Objects</td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
